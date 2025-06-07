@@ -1,0 +1,208 @@
+/* Neuomorphism Styles */
+body {
+  background-color: #e0e5ec; /* Light background for neuromorphism */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.neu-card {
+  background-color: #e0e5ec;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px rgba(255,255,255, 0.5);
+  margin: 20px;
+  text-align: center;
+}
+
+.neu-profile-pic {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  margin-bottom: 20px;
+  box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff; /* Neuromorphic shadow for the image */
+}
+
+.contact-details p {
+  margin: 10px 0;
+  line-height: 1.6;
+  text-align: left; /* Align text to the left for better readability */
+  padding-left: 20px; /* Add some padding for alignment */
+  padding-right: 20px;
+}
+
+.contact-details strong {
+  color: #3a7bd5; /* Highlight labels */
+}
+
+.contact-details a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+.neu-hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(163, 177, 198, 0.75), rgba(0, 0, 0, 0));
+  margin: 20px 0;
+}
+
+.objectives-text {
+  text-align: justify; /* For a block-like text appearance */
+  padding: 0 20px; /* Add some horizontal padding */
+  line-height: 1.7; /* Improve readability */
+  margin-bottom: 15px; /* Space after the objectives text */
+}
+
+.education-entry {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: left;
+}
+
+.education-entry h4 {
+  color: #3a7bd5; /* Highlight institution name */
+  margin-bottom: 5px;
+}
+
+.education-entry p {
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.neu-hr-dashed {
+    border: 0;
+    border-top: 1px dashed #a3b1c6;
+    margin: 20px 0;
+}
+
+.experience-entry {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: left;
+}
+
+.experience-entry h4 {
+  color: #3a7bd5; /* Highlight company name */
+  margin-bottom: 8px;
+}
+
+.experience-entry p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.experience-entry strong {
+  font-weight: bold;
+  color: #5b6a82; /* Slightly darker for emphasis */
+}
+
+.skills-category {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skills-category h3 {
+  color: #3a7bd5; /* Highlight category name */
+  margin-bottom: 10px;
+  padding-left: 10px; /* Align with list items */
+}
+
+.skills-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.skills-list li {
+  background-color: #e0e5ec; /* Match card background */
+  margin-bottom: 8px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.95em;
+  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff; /* Inner shadow for neuromorphic list items */
+  line-height: 1.5;
+}
+
+/* Remove last dashed hr in the skills section */
+.skills-category:last-child .neu-hr-dashed {
+  display: none;
+}
+
+.neu-navbar {
+  background-color: #e0e5ec;
+  padding: 15px 30px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #a3b1c6, -5px -5px 10px #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.neu-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.neu-nav-links li {
+  margin: 0 15px;
+}
+
+.neu-nav-links a {
+  text-decoration: none;
+  color: #5b6a82;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.neu-nav-links a:hover,
+.neu-nav-links a.active { /* You might need to use NavLink for active class or manage it with state */
+  box-shadow: inset 5px 5px 10px #a3b1c6, inset -5px -5px 10px #ffffff;
+  color: #3a7bd5;
+}
+
+.page-content {
+  padding: 20px;
+  width: 80%;
+  max-width: 800px; /* Max width for content area */
+  margin: auto; /* Center content */
+}
+
+/* App.js specific adjustments if needed */
+.App {
+  text-align: center;
+}
+
+/* Remove default header styles from create-react-app if they conflict */
+.App-header {
+  background-color: transparent; /* Remove default CRA header background */
+  min-height: auto;
+  display: block; /* Change display to allow normal flow */
+  font-size: calc(10px + 2vmin);
+  color: #333; /* Adjust text color to fit neuromorphic theme */
+}
+
+.App-logo {
+  display: none; /* Hide the React logo for now */
+}
+
+.App-link {
+  color: #007bff; /* Standard link color, or choose a neuromorphic one */
+}

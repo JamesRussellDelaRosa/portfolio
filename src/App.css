@@ -1,3 +1,5 @@
+/* Remove or comment out existing styles if they conflict with Neuomorphism.css */
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +38,7 @@
     transform: rotate(360deg);
   }
 }
+*/
+
+/* You can add global app-specific styles here if needed,
+   but most styling should now be in Neuomorphism.css or component-specific files. */
